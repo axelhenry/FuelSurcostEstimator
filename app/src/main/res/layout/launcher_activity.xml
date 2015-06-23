@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!-- 	 <fragment android:name="com.ahenry.isBuyingDieselProfitable.LaunchIHM" -->
+<!--             android:id="@+id/values1" -->
+<!--             android:layout_weight="1" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" /> -->
+	 <LinearLayout
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/layoutHolder1">
+<!-- 	     android:layout_alignParentTop="true"> -->
+		 <fragment android:name="com.ahenry.fuelsurcostestimator.views.IHM_CarInfo"
+	            android:id="@+id/carInfoHolder1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	 </LinearLayout>
+	 <LinearLayout
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/layoutHolder2"
+	     android:layout_below="@id/layoutHolder1">
+		 <fragment android:name="com.ahenry.fuelsurcostestimator.views.IHM_CarInfo"
+	            android:id="@+id/carInfoHolder2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	 </LinearLayout>
+	 <fragment android:name="com.ahenry.fuelsurcostestimator.views.IHM_GoButton"
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/layoutHolder2"/>
+    
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/mileageL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/mileage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/mileageV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mileageL"
+        android:layout_alignBottom="@+id/mileageL"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/mileageL"
+        android:ems="10"
+        android:hint="@string/mileage_hint"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/fCarPriceL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mileageL"
+        android:layout_below="@+id/mileageV"
+        android:layout_marginTop="28dp"
+        android:text="@string/car_price_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/fCarPriceV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fCarPriceL"
+        android:layout_alignBottom="@+id/fCarPriceL"
+        android:layout_toRightOf="@+id/mileageL"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/fCarConsoL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fCarPriceL"
+        android:layout_below="@+id/fCarPriceV"
+        android:layout_marginTop="20dp"
+        android:text="@string/car_consumption_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/fCarConsoV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fCarConsoL"
+        android:layout_alignBottom="@+id/fCarConsoL"
+        android:layout_toRightOf="@+id/mileageL"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/fCarGazolineL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fCarConsoL"
+        android:layout_below="@+id/fCarConsoV"
+        android:layout_marginTop="20dp"
+        android:text="@string/car_gazoline_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fCarGazolineL"
+        android:layout_toRightOf="@id/fCarGazolineL" />
+
+    <TextView
+        android:id="@+id/sCarPriceL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fCarGazolineL"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="20dp"
+        android:text="@string/car_price_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sCarConsoL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sCarPriceL"
+        android:layout_below="@+id/sCarPriceL"
+        android:layout_marginTop="20dp"
+        android:text="@string/car_consumption_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sCarGazolineL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sCarConsoL"
+        android:layout_below="@+id/sCarConsoL"
+        android:layout_marginTop="20dp"
+        android:text="@string/car_gazoline_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/sCarPriceV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sCarPriceL"
+        android:layout_alignBottom="@+id/sCarPriceL"
+        android:layout_toRightOf="@+id/mileageL"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/sCarConsoV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sCarConsoL"
+        android:layout_alignBottom="@+id/sCarConsoL"
+        android:layout_toRightOf="@+id/mileageL"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sCarGazolineL"
+        android:layout_toRightOf="@+id/sCarGazolineL" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:onClick="estimateProfit"
+        android:text="@string/evaluate" />
+
+</RelativeLayout>

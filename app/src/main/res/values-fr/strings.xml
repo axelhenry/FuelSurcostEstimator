@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">isBuyingDieselProfitable</string>
+    <string name="hello">Hello isBuyingDieselProfitable!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="mileage">Kilomètres/an</string>
+    <string name="mileage_hint">Hint !!</string>
+    <string name="car_price_label">Prix d\'achat</string>
+    <string name="car_price_hint">Hint !!</string>
+    <string name="car_consumption_label">Conso (l/100km)</string>
+    <string name="car_consumption_hint">Hint !!</string>
+    <string name="car_gazoline_label">Carburant</string>
+    <string name="evaluate">GO</string>
+    <string name="title_activity_get_gaz_prices">GetGazPrices</string>
+    <string name="title_activity_main_launcher">MainLauncher</string>
+    <string name="title_activity_launch_app">LaunchApp</string>
+    <string name="float_validation_error">Pas un nombre décimal</string>
+    <string name="float_validation_error_out_of_range">Pas dans l\'intervalle</string>
+    <string name="field_empty_validation_error">Ce champ ne peut être vide</string>
+	<string name="plot_domain_label">Années</string>
+	<string name="plot_range_label">Coût</string>
+	<string name="plot_firstCar_label">Voiture 1</string>
+	<string name="plot_secondCar_label">Voiture 2</string>
+	<string name="connection_alert_message">Connection alert</string>
+	
+</resources>
